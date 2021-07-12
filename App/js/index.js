@@ -194,11 +194,67 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"spec_block")
                 .setLeft("0.16666666666666666em")
                 .setTop("-0.16666666666666666em")
-                .setWidth("65.83333333333333em")
-                .setHeight("45.833333333333336em")
+                .setWidth("62.476190476190474em")
+                .setHeight("46.17142857142857em")
                 .setZIndex(0)
                 .setBackground("#31081F"),
-                "Specifications");
+                "Specifications"
+            );
+            
+            host.spec_block.append(
+                xui.create("xui.UI.Image")
+                .setHost(host,"xui_ui_image123")
+                .setLeft("1.2952380952380953em")
+                .setTop("2.2095238095238097em")
+                .setWidth("57.523809523809526em")
+                .setHeight("5.104761904761904em")
+                .setSrc("{/}Publication5 (2).jpg")
+            );
+            
+            host.spec_block.append(
+                xui.create("xui.UI.Image")
+                .setHost(host,"xui_ui_image128")
+                .setLeft("3.580952380952381em")
+                .setTop("9.371428571428572em")
+                .setWidth("23.466666666666665em")
+                .setHeight("3.8095238095238093em")
+                .setSrc("{/}Publication6 (2).jpg")
+            );
+            
+            host.spec_block.append(
+                xui.create("xui.UI.Image")
+                .setHost(host,"xui_ui_image129")
+                .setLeft("5.104761904761904em")
+                .setTop("16.99047619047619em")
+                .setWidth("19.047619047619047em")
+                .setHeight("3.7333333333333334em")
+                .setSrc("{/}Publication6 (3).jpg")
+            );
+            
+            host.spec_block.append(
+                xui.create("xui.UI.Image")
+                .setHost(host,"xui_ui_image130")
+                .setLeft("4.3428571428571425em")
+                .setTop("24.60952380952381em")
+                .setWidth("17.904761904761905em")
+                .setHeight("4.3428571428571425em")
+                .setSrc("{/}Publication6 (4).jpg")
+            );
+            
+            host.spec_block.append(
+                xui.create("xui.UI.ComboInput")
+                .setHost(host,"capInput")
+                .setLeft("30.17142857142857em")
+                .setTop("9.371428571428572em")
+                .setWidth("18.833333333333332em")
+                .setHeight("3.5em")
+                .setLabelSize("8em")
+                .setType("spin")
+                .setPrecision(0)
+                .setMin(0)
+                .setMax(6)
+                .setValue(1)
+            );
             
             return children;
             // ]]Code created by CrossUI RAD Studio
