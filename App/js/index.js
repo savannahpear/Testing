@@ -73,7 +73,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label20")
                 .setLeft("2.2095238095238097em")
-                .setTop("2.2095238095238097em")
+                .setTop("1.4476190476190476em")
                 .setWidth("14.552380952380952em")
                 .setHeight("2.5904761904761906em")
                 .setCaption("Pick a category:")
@@ -85,7 +85,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.CheckBox")
                 .setHost(host,"checkbox_quotes")
                 .setLeft("2.0416666666666665em")
-                .setTop("3.7083333333333335em")
+                .setTop("2.875em")
                 .setWidth("5.75em")
                 .setHeight("1.9166666666666667em")
                 .setCaption("Quotes")
@@ -100,26 +100,9 @@ xui.Class('App', 'xui.Module',{
             
             host.home_block.append(
                 xui.create("xui.UI.CheckBox")
-                .setHost(host,"checkbox_lyrics")
-                .setLeft("9.125em")
-                .setTop("3.6666666666666665em")
-                .setWidth("4.75em")
-                .setHeight("1.65em")
-                .setCaption("Lyrics")
-                .onChange("_mat2")
-                .setCustomStyle({
-                    "KEY" : {
-                        "color" : "#FFFFFF",
-                        "font-size" : "24px"
-                    }
-                })
-            );
-            
-            host.home_block.append(
-                xui.create("xui.UI.CheckBox")
                 .setHost(host,"checkbox_books")
                 .setLeft("14.958333333333334em")
-                .setTop("3.6666666666666665em")
+                .setTop("2.875em")
                 .setWidth("7.25em")
                 .setHeight("1.65em")
                 .setCaption("Book Titles")
@@ -136,7 +119,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.CheckBox")
                 .setHost(host,"checkbox_movies")
                 .setLeft("22.875em")
-                .setTop("3.6666666666666665em")
+                .setTop("2.875em")
                 .setWidth("7.75em")
                 .setHeight("1.65em")
                 .setCaption("Movie Titles")
@@ -153,7 +136,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Button")
                 .setHost(host,"switchNext")
                 .setLeft("26.590476190476192em")
-                .setTop("11.276190476190477em")
+                .setTop("9.066666666666666em")
                 .setWidth("9.142857142857142em")
                 .setHeight("3.657142857142857em")
                 .setCaption("Add more specifics")
@@ -162,6 +145,23 @@ xui.Class('App', 'xui.Module',{
                 .setCustomStyle({
                     "KEY" : {
                         "color" : "#31081F"
+                    }
+                })
+            );
+            
+            host.home_block.append(
+                xui.create("xui.UI.CheckBox")
+                .setHost(host,"checkbox_lyrics")
+                .setLeft("8.75em")
+                .setTop("2.875em")
+                .setWidth("4.75em")
+                .setHeight("1.65em")
+                .setCaption("Lyrics")
+                .onChange("_mat2")
+                .setCustomStyle({
+                    "KEY" : {
+                        "color" : "#FFFFFF",
+                        "font-size" : "24px"
                     }
                 })
             );
