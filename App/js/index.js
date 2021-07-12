@@ -39,6 +39,7 @@ xui.Class('App', 'xui.Module',{
                 ])
                 .setLeft("0em")
                 .setTop("0em")
+                .setZIndex(0)
                 .setValue("Home")
                 .setCustomStyle({
                     "KEY" : {
@@ -107,9 +108,9 @@ xui.Class('App', 'xui.Module',{
                 .setCaption("Lyrics")
                 .onChange("_mat2")
                 .setCustomStyle({
-                    "KEY":{
-                        "color":"#FFFFFF",
-                        "font-size":"24px"
+                    "KEY" : {
+                        "color" : "#FFFFFF",
+                        "font-size" : "24px"
                     }
                 })
             );
@@ -124,9 +125,9 @@ xui.Class('App', 'xui.Module',{
                 .setCaption("Book Titles")
                 .onChange("_mat3")
                 .setCustomStyle({
-                    "KEY":{
-                        "color":"#FFFFFF",
-                        "font-size":"24px"
+                    "KEY" : {
+                        "color" : "#FFFFFF",
+                        "font-size" : "24px"
                     }
                 })
             );
@@ -141,9 +142,9 @@ xui.Class('App', 'xui.Module',{
                 .setCaption("Movie Titles")
                 .onChange("_mat4")
                 .setCustomStyle({
-                    "KEY":{
-                        "color":"#FFFFFF",
-                        "font-size":"24px"
+                    "KEY" : {
+                        "color" : "#FFFFFF",
+                        "font-size" : "24px"
                     }
                 })
             );
@@ -151,8 +152,8 @@ xui.Class('App', 'xui.Module',{
             host.home_svg.append(
                 xui.create("xui.UI.Input")
                 .setHost(host,"inputter")
-                .setLeft("20.571428571428573em")
-                .setTop("14.552380952380952em")
+                .setLeft("25.904761904761905em")
+                .setTop("16.685714285714287em")
                 .setWidth("27em")
                 .setHeight("5em")
                 .setLabelSize("8em")
@@ -162,15 +163,17 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Image")
                 .setHost(host,"home_choose")
                 .setLeft("0em")
-                .setTop("-0.0761904761904762em")
+                .setTop("0.6857142857142857em")
                 .setSrc("{/}Publication2.jpg")
+                .setWidth("60.95238095238095em")
+                .setHeight("5.485714285714286em")
             );
             
             host.home_svg.append(
                 xui.create("xui.UI.Image")
                 .setHost(host,"xui_ui_image41")
                 .setLeft("1.5238095238095237em")
-                .setTop("6.095238095238095em")
+                .setTop("7.619047619047619em")
                 .setWidth("57.5em")
                 .setHeight("5.083333333333333em")
                 .setSrc("{/}Publication3.jpg")
@@ -179,8 +182,8 @@ xui.Class('App', 'xui.Module',{
             host.home_svg.append(
                 xui.create("xui.UI.Image")
                 .setHost(host,"xui_ui_image44")
-                .setLeft("6.095238095238095em")
-                .setTop("13.714285714285714em")
+                .setLeft("8.380952380952381em")
+                .setTop("15.238095238095237em")
                 .setWidth("14.857142857142858em")
                 .setHeight("7.0095238095238095em")
                 .setSrc("{/}pub2.jpg")
