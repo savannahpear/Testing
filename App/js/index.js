@@ -1467,6 +1467,7 @@ else
         
         
         _switch1:function(){
+            alert("here");
             this.xui_ui_tabs.setValue("Specifications",true);   
         },
         
