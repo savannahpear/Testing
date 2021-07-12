@@ -58,6 +58,97 @@ xui.Class('App', 'xui.Module',{
             );
             
             host.home_svg.append(
+                xui.create("xui.UI.Block")
+                .setHost(host,"home_block")
+                .setLeft("0em")
+                .setTop("25.904761904761905em")
+                .setWidth("64.83333333333333em")
+                .setHeight("19.166666666666668em")
+                .setZIndex(1002)
+                .setBackground("#31081F")
+            );
+            
+            host.home_block.append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label20")
+                .setLeft("2.2095238095238097em")
+                .setTop("2.2095238095238097em")
+                .setWidth("14.552380952380952em")
+                .setHeight("2.5904761904761906em")
+                .setCaption("Pick a category:")
+                .setFontColor("#FFFFFF")
+                .setFontSize("25px")
+            );
+            
+            host.home_block.append(
+                xui.create("xui.UI.CheckBox")
+                .setHost(host,"checkbox_quotes")
+                .setLeft("2.0416666666666665em")
+                .setTop("3.7083333333333335em")
+                .setWidth("5.75em")
+                .setHeight("1.9166666666666667em")
+                .setCaption("Quotes")
+                .onChange("_mat1")
+                .setCustomStyle({
+                    "KEY" : {
+                        "color" : "#FFFFFF",
+                        "font-size" : "24px"
+                    }
+                })
+            );
+            
+            host.home_block.append(
+                xui.create("xui.UI.CheckBox")
+                .setHost(host,"checkbox_lyrics")
+                .setLeft("9.125em")
+                .setTop("3.6666666666666665em")
+                .setWidth("4.75em")
+                .setHeight("1.65em")
+                .setCaption("Lyrics")
+                .onChange("_mat2")
+                .setCustomStyle({
+                    "KEY":{
+                        "color":"#FFFFFF",
+                        "font-size":"24px"
+                    }
+                })
+            );
+            
+            host.home_block.append(
+                xui.create("xui.UI.CheckBox")
+                .setHost(host,"checkbox_books")
+                .setLeft("14.958333333333334em")
+                .setTop("3.6666666666666665em")
+                .setWidth("7.25em")
+                .setHeight("1.65em")
+                .setCaption("Book Titles")
+                .onChange("_mat3")
+                .setCustomStyle({
+                    "KEY":{
+                        "color":"#FFFFFF",
+                        "font-size":"24px"
+                    }
+                })
+            );
+            
+            host.home_block.append(
+                xui.create("xui.UI.CheckBox")
+                .setHost(host,"checkbox_movies")
+                .setLeft("22.875em")
+                .setTop("3.6666666666666665em")
+                .setWidth("7.75em")
+                .setHeight("1.65em")
+                .setCaption("Movie Titles")
+                .onChange("_mat4")
+                .setCustomStyle({
+                    "KEY":{
+                        "color":"#FFFFFF",
+                        "font-size":"24px"
+                    }
+                })
+            );
+            
+            host.home_svg.append(
                 xui.create("xui.UI.Input")
                 .setHost(host,"inputter")
                 .setLeft("20.571428571428573em")
@@ -94,17 +185,6 @@ xui.Class('App', 'xui.Module',{
                 .setHeight("7.0095238095238095em")
                 .setSrc("{/}pub2.jpg")
             );
-            
-            host.home_svg.append(
-                xui.create("xui.UI.Block")
-                .setHost(host,"home_block")
-                .setLeft("0.16666666666666666em")
-                .setTop("26.5em")
-                .setWidth("64.83333333333333em")
-                .setHeight("19.166666666666668em")
-                .setZIndex(0)
-                .setBackground("#31081F"),
-                "Home");
             
             return children;
             // ]]Code created by CrossUI RAD Studio
