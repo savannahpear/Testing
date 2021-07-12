@@ -1467,7 +1467,6 @@ else
         
         
         _switch1:function(){
-            alert("here");
             this.tabs.setValue("Specifications",true);   
         },
         
