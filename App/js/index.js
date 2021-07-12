@@ -234,8 +234,8 @@ xui.Class('App', 'xui.Module',{
             host.spec_block.append(
                 xui.create("xui.UI.Image")
                 .setHost(host,"xui_ui_image130")
-                .setLeft("4.3428571428571425em")
-                .setTop("24.60952380952381em")
+                .setLeft("6.628571428571429em")
+                .setTop("26.895238095238096em")
                 .setWidth("17.904761904761905em")
                 .setHeight("4.3428571428571425em")
                 .setSrc("{/}Publication6 (4).jpg")
@@ -275,8 +275,8 @@ xui.Class('App', 'xui.Module',{
             host.tabs.append(
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"symbInput")
-                .setLeft("28.19047619047619em")
-                .setTop("25.142857142857142em")
+                .setLeft("29.714285714285715em")
+                .setTop("27.580952380952382em")
                 .setWidth("18.833333333333332em")
                 .setHeight("3.5em")
                 .setLabelSize("8em")
