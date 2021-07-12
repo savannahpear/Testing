@@ -225,7 +225,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Image")
                 .setHost(host,"xui_ui_image129")
                 .setLeft("5.104761904761904em")
-                .setTop("16.99047619047619em")
+                .setTop("16.685714285714287em")
                 .setWidth("19.047619047619047em")
                 .setHeight("3.7333333333333334em")
                 .setSrc("{/}Publication6 (3).jpg")
@@ -234,8 +234,8 @@ xui.Class('App', 'xui.Module',{
             host.spec_block.append(
                 xui.create("xui.UI.Image")
                 .setHost(host,"xui_ui_image130")
-                .setLeft("6.628571428571429em")
-                .setTop("26.895238095238096em")
+                .setLeft("5.866666666666666em")
+                .setTop("23.085714285714285em")
                 .setWidth("17.904761904761905em")
                 .setHeight("4.3428571428571425em")
                 .setSrc("{/}Publication6 (4).jpg")
@@ -256,11 +256,28 @@ xui.Class('App', 'xui.Module',{
                 .setValue(1)
             );
             
+            host.spec_block.append(
+                xui.create("xui.UI.Button")
+                .setHost(host,"switchNext2")
+                .setLeft("19.580952380952382em")
+                .setTop("32.22857142857143em")
+                .setWidth("17.916666666666668em")
+                .setHeight("5.333333333333333em")
+                .setCaption("Go to Generator ")
+                .setFontColor("#31081F")
+                .onClick("_switch2")
+                .setCustomStyle({
+                    "KEY" : {
+                        "color" : "#31081F"
+                    }
+                })
+            );
+            
             host.tabs.append(
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"numInput")
                 .setLeft("29.714285714285715em")
-                .setTop("17.523809523809526em")
+                .setTop("16.685714285714287em")
                 .setWidth("18.833333333333332em")
                 .setHeight("3.5em")
                 .setLabelSize("8em")
@@ -275,8 +292,8 @@ xui.Class('App', 'xui.Module',{
             host.tabs.append(
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"symbInput")
-                .setLeft("29.714285714285715em")
-                .setTop("27.580952380952382em")
+                .setLeft("28.952380952380953em")
+                .setTop("23.771428571428572em")
                 .setWidth("18.833333333333332em")
                 .setHeight("3.5em")
                 .setLabelSize("8em")
