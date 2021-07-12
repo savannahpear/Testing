@@ -40,7 +40,7 @@ xui.Class('App', 'xui.Module',{
                 .setLeft("0em")
                 .setTop("0em")
                 .setZIndex(0)
-                .setValue("Specifications")
+                .setValue("Home")
                 .setCustomStyle({
                     "KEY" : {
                         "background-color" : "#31081F"
@@ -205,7 +205,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Image")
                 .setHost(host,"xui_ui_image123")
                 .setLeft("1.2952380952380953em")
-                .setTop("2.2095238095238097em")
+                .setTop("2.5142857142857142em")
                 .setWidth("57.523809523809526em")
                 .setHeight("5.104761904761904em")
                 .setSrc("{/}Publication5 (2).jpg")
