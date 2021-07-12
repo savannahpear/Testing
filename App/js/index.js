@@ -152,16 +152,16 @@ xui.Class('App', 'xui.Module',{
             host.home_block.append(
                 xui.create("xui.UI.Button")
                 .setHost(host,"switchNext")
-                .setLeft("28.876190476190477em")
-                .setTop("12.8em")
+                .setLeft("26.590476190476192em")
+                .setTop("11.276190476190477em")
                 .setWidth("9.142857142857142em")
                 .setHeight("3.657142857142857em")
                 .setCaption("Add more specifics")
                 .setFontColor("#31081F")
                 .onClick("_switch1")
                 .setCustomStyle({
-                    "KEY":{
-                        "color":"#31081F"
+                    "KEY" : {
+                        "color" : "#31081F"
                     }
                 })
             );
