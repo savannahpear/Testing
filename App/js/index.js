@@ -431,6 +431,7 @@ xui.Class('App', 'xui.Module',{
         },
         
         _homonymer:function(){
+            alert("here");
             this._material();
             var initial = this.inputter.getUIValue();
             var done = " ";
