@@ -200,6 +200,26 @@ xui.Class('App', 'xui.Module',{
                 .setSrc("{/}music note.png")
             );
             
+            host.home_svg.append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"finaly")
+                .setLeft("3.8095238095238093em")
+                .setTop("22.857142857142858em")
+                .setWidth("12.342857142857143em")
+                .setHeight("5.0285714285714285em")
+                .setCaption("Label")
+            );
+            
+            host.home_svg.append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"finaly2")
+                .setLeft("24.38095238095238em")
+                .setTop("23.61904761904762em")
+                .setWidth("7.0095238095238095em")
+                .setHeight("3.5047619047619047em")
+                .setCaption("Label")
+            );
+            
             host.tabs.append(
                 xui.create("xui.UI.SVGPaper")
                 .setHost(host,"gen_svg")
