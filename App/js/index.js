@@ -256,6 +256,38 @@ xui.Class('App', 'xui.Module',{
                 .setValue(1)
             );
             
+            host.tabs.append(
+                xui.create("xui.UI.ComboInput")
+                .setHost(host,"numInput")
+                .setLeft("29.714285714285715em")
+                .setTop("17.523809523809526em")
+                .setWidth("18.833333333333332em")
+                .setHeight("3.5em")
+                .setLabelSize("8em")
+                .setType("spin")
+                .setPrecision(0)
+                .setMin(0)
+                .setMax(6)
+                .setValue(1),
+                "Specifications"
+            );
+            
+            host.tabs.append(
+                xui.create("xui.UI.ComboInput")
+                .setHost(host,"symbInput")
+                .setLeft("28.19047619047619em")
+                .setTop("25.142857142857142em")
+                .setWidth("18.833333333333332em")
+                .setHeight("3.5em")
+                .setLabelSize("8em")
+                .setType("spin")
+                .setPrecision(0)
+                .setMin(0)
+                .setMax(6)
+                .setValue(1),
+                "Specifications"
+            );
+            
             return children;
             // ]]Code created by CrossUI RAD Studio
         },
