@@ -989,7 +989,7 @@ else if (initial.includes("your"))
 else 
     done = initial;
 
-            this.doney.setCaption(done);
+            this.finaly.setCaption(done);
             
 
             this._getInput();
