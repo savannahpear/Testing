@@ -149,6 +149,23 @@ xui.Class('App', 'xui.Module',{
                 })
             );
             
+            host.home_block.append(
+                xui.create("xui.UI.Button")
+                .setHost(host,"switchNext")
+                .setLeft("28.876190476190477em")
+                .setTop("12.8em")
+                .setWidth("9.142857142857142em")
+                .setHeight("3.657142857142857em")
+                .setCaption("Add more specifics")
+                .setFontColor("#31081F")
+                .onClick("_switch1")
+                .setCustomStyle({
+                    "KEY":{
+                        "color":"#31081F"
+                    }
+                })
+            );
+            
             host.home_svg.append(
                 xui.create("xui.UI.Input")
                 .setHost(host,"inputter")
