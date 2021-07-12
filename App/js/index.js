@@ -1467,11 +1467,11 @@ else
         
         
         _switch1:function(){
-            this.tabs.setValue("Specifications",true);   
+            this.xui_ui_tabs.setValue("Specifications",true);   
         },
         
         _switch2:function(){
-            this.tabs.setValue("Generator",true);
+            this.xui_ui_tabs.setValue("Generator",true);
         }
         
         /*,
