@@ -40,7 +40,7 @@ xui.Class('App', 'xui.Module',{
                 .setLeft("0em")
                 .setTop("0em")
                 .setZIndex(0)
-                .setValue("Home")
+                .setValue("Specifications")
                 .setCustomStyle({
                     "KEY" : {
                         "background-color" : "#31081F"
@@ -164,9 +164,9 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"home_choose")
                 .setLeft("0em")
                 .setTop("0.6857142857142857em")
-                .setSrc("{/}Publication2.jpg")
                 .setWidth("60.95238095238095em")
                 .setHeight("5.485714285714286em")
+                .setSrc("{/}Publication2.jpg")
             );
             
             host.home_svg.append(
@@ -188,6 +188,17 @@ xui.Class('App', 'xui.Module',{
                 .setHeight("7.0095238095238095em")
                 .setSrc("{/}pub2.jpg")
             );
+            
+            host.tabs.append(
+                xui.create("xui.UI.Block")
+                .setHost(host,"spec_block")
+                .setLeft("0.16666666666666666em")
+                .setTop("-0.16666666666666666em")
+                .setWidth("65.83333333333333em")
+                .setHeight("45.833333333333336em")
+                .setZIndex(0)
+                .setBackground("#31081F"),
+                "Specifications");
             
             return children;
             // ]]Code created by CrossUI RAD Studio
