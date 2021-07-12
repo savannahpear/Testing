@@ -40,7 +40,7 @@ xui.Class('App', 'xui.Module',{
                 .setLeft("0em")
                 .setTop("0em")
                 .setZIndex(0)
-                .setValue("Generator")
+                .setValue("Home")
                 .setCustomStyle({
                     "KEY" : {
                         "background-color" : "#31081F"
@@ -231,9 +231,29 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Input")
                 .setHost(host,"gen_inpt_passspace")
                 .setLeft("1.5238095238095237em")
-                .setTop("28.19047619047619em")
+                .setTop("26.666666666666668em")
                 .setWidth("26.666666666666668em")
                 .setHeight("3.5em")
+            );
+            
+            host.gen_svg.append(
+                xui.create("xui.UI.Image")
+                .setHost(host,"xui_ui_image345")
+                .setLeft("30.476190476190474em")
+                .setTop("22.857142857142858em")
+                .setWidth("28.333333333333332em")
+                .setHeight("2.8333333333333335em")
+                .setSrc("{/}publication7 (3).jpg")
+            );
+            
+            host.gen_svg.append(
+                xui.create("xui.UI.Input")
+                .setHost(host,"gen_inpt_passswpace")
+                .setLeft("32em")
+                .setTop("26.666666666666668em")
+                .setWidth("26.666666666666668em")
+                .setHeight("3.5em")
+                .setLabelCaption("Input")
             );
             
             host.tabs.append(
