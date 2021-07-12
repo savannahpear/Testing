@@ -40,7 +40,7 @@ xui.Class('App', 'xui.Module',{
                 .setLeft("0em")
                 .setTop("0em")
                 .setZIndex(0)
-                .setValue("Home")
+                .setValue("Generator")
                 .setCustomStyle({
                     "KEY" : {
                         "background-color" : "#31081F"
@@ -187,6 +187,53 @@ xui.Class('App', 'xui.Module',{
                 .setWidth("14.857142857142858em")
                 .setHeight("7.0095238095238095em")
                 .setSrc("{/}pub2.jpg")
+            );
+            
+            host.tabs.append(
+                xui.create("xui.UI.SVGPaper")
+                .setHost(host,"gen_svg")
+                .setLeft("0em")
+                .setTop("0.1523809523809524em")
+                .setWidth("60.95238095238095em")
+                .setHeight("41.75238095238095em"),
+                "Generator"
+            );
+            
+            host.gen_svg.append(
+                xui.create("xui.UI.Button")
+                .setHost(host,"clicker")
+                .setLeft("12.19047619047619em")
+                .setTop("4.495238095238095em")
+                .setWidth("29.75em")
+                .setHeight("13.5em")
+                .setCaption("Click here for your password!")
+                .setFontColor("#31081F")
+                .onClick("_homonymer")
+                .setCustomStyle({
+                    "KEY" : {
+                        "color" : "#31081F",
+                        "background-color" : "#31081F"
+                    }
+                })
+            );
+            
+            host.gen_svg.append(
+                xui.create("xui.UI.Image")
+                .setHost(host,"xui_ui_image320")
+                .setLeft("2.2857142857142856em")
+                .setTop("22.857142857142858em")
+                .setWidth("25em")
+                .setHeight("2.4166666666666665em")
+                .setSrc("{/}publication7 (2).jpg")
+            );
+            
+            host.gen_svg.append(
+                xui.create("xui.UI.Input")
+                .setHost(host,"gen_inpt_passspace")
+                .setLeft("1.5238095238095237em")
+                .setTop("28.19047619047619em")
+                .setWidth("26.666666666666668em")
+                .setHeight("3.5em")
             );
             
             host.tabs.append(
