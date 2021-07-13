@@ -1427,9 +1427,10 @@ xui.Class('App', 'xui.Module',{
             
         },
         
-        _material:function(){            
-            //var input = this.categories.getUIValue();
+        _material:function(){  
             alert("here3");
+            //var input = this.categories.getUIValue();
+            
             var fin = "";
             var rando = 0; 
             rando = (Math.round(Math.random() * this.$tota.length-1));
