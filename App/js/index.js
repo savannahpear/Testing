@@ -994,6 +994,7 @@ else
             
 
             this._getInput();
+            alert("here2");
         },
         
         _getInput:function(){            
