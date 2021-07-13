@@ -1435,6 +1435,7 @@ xui.Class('App', 'xui.Module',{
             fin = this.$tota[rando];   
             this.inputter.setUIValue(fin);   
             this.$tota = [];
+            alert("here3");
         },
         
         
