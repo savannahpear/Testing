@@ -2,6 +2,13 @@
 // Ensure that all the value of "key/value pair" does not refer to external variables
 xui.Class('App', 'xui.Module',{
     Instance:{
+        $word1:"n",
+        $charge1:"n",
+        $capps:0,
+        $numms:0,
+        $symbs:0,
+        $changed:"hi",
+        $tota:[],
         // Dependency classes
         Dependencies:[],
         // Required modules
