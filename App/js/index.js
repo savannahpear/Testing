@@ -438,7 +438,6 @@ xui.Class('App', 'xui.Module',{
         },
         
         _homonymer:function(){
-            alert("here");
             this._material();
             var initial = this.inputter.getUIValue();
             var done = " ";
@@ -998,7 +997,6 @@ xui.Class('App', 'xui.Module',{
                 done = initial;
 
             this.finaly.setCaption(done);
-            alert("here2");
 
             this._getInput();
             
@@ -1443,7 +1441,6 @@ xui.Class('App', 'xui.Module',{
             fin = this.$tota[rando];   
             this.inputter.setUIValue(fin);   
             this.$tota = [];
-            alert("here3");
         },
         
         
