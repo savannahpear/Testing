@@ -1429,13 +1429,13 @@ xui.Class('App', 'xui.Module',{
         
         _material:function(){            
             //var input = this.categories.getUIValue();
+            alert("here3");
             var fin = "";
             var rando = 0; 
             rando = (Math.round(Math.random() * this.$tota.length-1));
             fin = this.$tota[rando];   
             this.inputter.setUIValue(fin);   
             this.$tota = [];
-            alert("here3");
         },
         
         
