@@ -991,10 +991,10 @@ xui.Class('App', 'xui.Module',{
                 done = initial;
 
             this.finaly.setCaption(done);
-            
+            alert("here2");
 
             this._getInput();
-            alert("here2");
+            
         },
         
         _getInput:function(){            
