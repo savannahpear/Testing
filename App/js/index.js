@@ -244,6 +244,81 @@ xui.Class('App', 'xui.Module',{
                 .setCaption("Label")
             );
             
+            host.home_svg.append(
+                xui.create("xui.UI.Button")
+                .setHost(host,"xui_ui_button4")
+                .setLeft("2.2857142857142856em")
+                .setTop("12.19047619047619em")
+                .setCaption("Dropable Button")
+                .setType("drop")
+            );
+            
+            host.home_svg.append(
+                xui.create("xui.UI.ComboInput")
+                .setHost(host,"xui_ui_comboinput11")
+                .setLeft("13.714285714285714em")
+                .setTop("8.380952380952381em")
+                .setWidth("18em")
+                .setLabelSize("8em")
+                .setItems([
+                    {
+                        "id" : "a",
+                        "caption" : "item 1",
+                        "imageClass" : "xui-icon-number1"
+                    },
+                    {
+                        "id" : "b",
+                        "caption" : "item 2",
+                        "imageClass" : "xui-icon-number2"
+                    },
+                    {
+                        "id" : "c",
+                        "caption" : "item 3",
+                        "imageClass" : "xui-icon-number3"
+                    },
+                    {
+                        "id" : "d",
+                        "caption" : "item 4",
+                        "imageClass" : "xui-icon-number4",
+                        "disabled" : true
+                    }
+                ])
+            );
+            
+            host.home_svg.append(
+                xui.create("xui.UI.List")
+                .setHost(host,"xui_ui_list2")
+                .setItems([
+                    {
+                        "id" : "a",
+                        "caption" : "item 1",
+                        "imageClass" : "xui-icon-number1"
+                    },
+                    {
+                        "id" : "b",
+                        "caption" : "item 2",
+                        "imageClass" : "xui-icon-number2"
+                    },
+                    {
+                        "id" : "c",
+                        "caption" : "item 3",
+                        "imageClass" : "xui-icon-number3"
+                    },
+                    {
+                        "id" : "d",
+                        "caption" : "item 4",
+                        "imageClass" : "xui-icon-number4",
+                        "disabled" : true
+                    }
+                ])
+                .setLeft("28.952380952380953em")
+                .setTop("3.0476190476190474em")
+                .setWidth("24.38095238095238em")
+                .setLabelSize("7.619047619047619em")
+                .setLabelCaption("List")
+                .setValue("a")
+            );
+            
             host.tabs.append(
                 xui.create("xui.UI.SVGPaper")
                 .setHost(host,"gen_svg")
